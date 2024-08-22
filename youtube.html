@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel = "stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        *{
+            color: white;
+            font-family: helvetica;
+        }
+        header{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        body{
+            background-color: rgb(14, 14, 14);
+        }
+        .search-bar{
+            width: 500px;
+            padding: 5px;
+            border-radius: 2px;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            
+
+        }
+        .nav{
+            align-items: center;
+            
+        }
+        .search-area{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .header{
+            display: flex;
+        }
+        .user{
+            color: white;
+            
+            background-color: red;
+            border-radius: 50px;
+            padding: 10px;
+            color: white;
+            
+            
+        }
+
+        .user-area{
+            display: flex;
+            margin-right: 40px;
+            align-items: center;
+        }
+        .user-area span{
+            margin-right: 15px;
+        }
+        .nav span{
+            margin-left: 10px;
+        }
+        .bi-search{
+            margin-left: 10px;
+
+            padding: 10px;
+
+        }
+        .bi-mic-fill{
+            margin-left: 10px;
+            align-items: center;
+            background-color: gray;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        ul{
+            list-style: none;
+            margin-left: -15px;
+        }
+        ul span{
+            margin-right: 10px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+        ul li{
+            margin-bottom: 20px;
+        }
+        .bi-list {
+            display: inline-block;
+            position: relative;
+            top: -20px;
+    
+        
+        }
+        .line{
+            border:1px solid white;
+        }
+        .liner{
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .sub1{
+            background-color: limegreen;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .sub2{
+            background-color: orange;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .sub3{
+            background-color: purple;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        hr{
+            margin-bottom: 15px;
+            border-color: gray;
+        }
+        .shroud{
+            margin-left: 14px;
+            border-radius: 50%;
+            margin-right: 15px;
+            float: left;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 35px;
+            margin-bottom: -10px;
+        }
+        h5{
+            color: gray;
+        }
+        a{
+            text-decoration: none;  
+        }
+        a h5{
+            color: gray;
+            margin-top: -10px;
+            
+        }
+        .tweet{
+            color: rgb(0, 179, 255);
+        }
+        .s{
+            margin-top: -10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            background-color: white;
+            border-radius: 50px;
+            width: 80px;
+            padding: 10px;
+            margin-left: 180px;
+        }
+        .bi-check-circle-fill{
+            font-size: 15px;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+        }
+        main .bi-search{
+            margin-left: -20px;
+        }
+        section main hr{
+            margin-top: -20px;
+            
+        }
+        .vid1 h5{
+            color:white;
+            margin-top: 10px;
+        }
+        .vid1{
+            display: flex;
+            
+            
+        }
+
+        .vid2 h5{
+            color:white;
+            margin-top: 10px;
+        }
+        .vid2{
+            display: flex;
+            
+        }
+        iframe{
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+        h6{
+            color: gray;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <span class="bi-list"></span>
+            <span>
+                <img src="image.png" height="50px" width="100px">
+            </span>
+        </div>
+
+        <div class="search-area">
+            <div class="search-bar">Search</div>
+            <span class="bi-search"></span>
+            <span class="bi-mic-fill"></span>
+            
+        </div>
+
+        <div class="user-area">
+            <span class="bi-camera-video"></span>
+            <span class="bi-bell"></span>
+            <span class="user">A</span>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <span class="bi-house"></span>
+                    Home
+                </li>
+                <li>
+                    <span class="bi-play-circle"></span>
+                    Shorts
+                </li>
+                <li>
+                    <span class="bi-collection-play"></span>
+                    Subscription
+                    
+                </li>
+                
+            </ul>
+            <hr>
+            <div class="liner">
+                You <span class="bi-arrow-right"></span>
+            </div>
+            <ul>
+                <li>
+                    <span class="bi-clock-history"></span>
+                    History
+                </li>
+                <li>
+                    <span class="bi-play-btn"></span>
+                    Playlists
+                </li>
+                <li>
+                    <span class="bi-clock"></span>
+                    Watch Later
+                </li>
+                <li>
+                    <span class="bi-hand-thumbs-up"></span>
+                    Liked Videos
+                </li>
+
+            </ul>
+            <hr>
+            <div class="liner">
+                Subscriptions
+            </div>
+            <ul>
+                <li>
+                    <span class="sub1">M</span>MoreSidemen</li>
+                <li>
+                    <span class="sub2">C</span>CarryMinati</li>
+                <li>
+                    <span class="sub3">Y</span>ygongcode</li>
+            </ul>
+        
+        </nav>
+        <main>
+            <img src="shroud.png" width="100%">
+            <div>
+                <img src="shroud.jpg" class="shroud">
+                <h1>Shroud
+                    <span class="bi-check-circle-fill"></span>
+                </h1> 
+            </div>
+            <div>  
+                    <h5>@shroud
+                   •
+                   6.84M subscribers
+                   •
+                   1.6K videos</h5>
+                   <a href="">
+                       <h5>Hey! Welcome to my channel. 
+                       ...more</h5>
+
+                   </a>
+                   <a href="">
+                       <h5><span class="tweet">twitter.com/shroud</span>
+                           and 3 more links</h5>
+                   </a>
+                   <div class="s">Subscribe</div>    
+            </div>
+            <ul class="menu">
+                <li>
+                    Home
+                </li>
+                <li>
+                    Videos
+                </li>
+                <li>
+                    Shorts
+                </li>
+                <li>
+                    Playlists
+                </li>
+                <li>Community</li>
+                <li>
+                    <span class="bi-search"></span>
+                </li>
+                
+            </ul>
+            <hr>
+            <div class="vid1">
+            <div>
+                <iframe width="250" height="150"  src="https://www.youtube.com/embed/U0wXIu-HUq0?si=tcILN06QlbG6-irZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h5>I Made This Apex Legends Pro Try Counter Strike 2</h5>
+                <h6>134K views<span class="bi-dot"></span>
+                    6 days ago</h6>       
+            </div>
+            <div>
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/i-qab6XnBCw?si=B8zvJx1Hrf6vASOp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+                <h5>Shroud's Full Walkthrough for His New Game</h5>        
+                <h6>114K views<span class="bi-dot"></span>
+                    8 days ago</h6> 
+            </div>
+            <div>
+                <iframe width="250" height="150"  src="https://www.youtube.com/embed/NelcKuCPFc8?si=hemJRd94akGgB98F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h5>SHROUD INVITES FPS PROS TO TRY HIS NEW GAME</h5>        
+                <h6>419K views<span class="bi-dot"></span>
+                    10 days ago</h6> 
+            </div>
+            <div>
+                <iframe width="250" height="150"src="https://www.youtube.com/embed/-GEw2D2JTv4?si=xvnG3WxiitgngiBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+                <h5>I Invited a Counter Strike Pro to Try My New Game</h5>        
+                <h6>145K views<span class="bi-dot"></span>
+                    12 days ago</h6> </div>
+            </div>
+
+
+            <div class="vid2">
+                <div>
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/VWzSyrdWbH4?si=ROspWjKd4oSirl-m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h5>Star Wars Outlaws Gameplay Reveal | First 40 Minutes w/ Shroud</h5>
+                    <h6>48K views<span class="bi-dot"></span>
+                        13 days ago</h6>       
+                </div>
+                <div>
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/fO8RejJZrhM?si=mGtno1xLKoEW5aGx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+                    <h5>Shroud Reacts to His Videos About His New Game</h5>        
+                    <h6>135K views<span class="bi-dot"></span>
+                        2 weeks ago</h6> 
+                </div>
+                <div>
+                    <iframe width="250" height="150"  src="https://www.youtube.com/embed/3hGiqHrNMVg?si=4QP60P9WMUk8duv_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h5>I'M LAUNCHING A NEW GAME</h5>        
+                    <h6>779K views<span class="bi-dot"></span>
+                        2 weeks ago</h6> 
+                </div>
+                <div>
+                    <iframe width="250" height="150"src="https://www.youtube.com/embed/GOUgNFrSD8Y?si=kA88fLLsB8hf0R4O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h5>Shroud Tried Sneaking Inside a Giant Star Wars Station</h5>        
+                
+                    <h6>70K views<span class="bi-dot"></span>
+                        3 weeks ago</h6> </div>
+                </div>
+        </main>
+    </section>
+    
+</body>
+</html>
